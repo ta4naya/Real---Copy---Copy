@@ -1,0 +1,61 @@
+﻿
+
+				<div id="myslidemenu" class="jqueryslidemenu" style="z-index: 1">
+<ul>
+<li><a href="Default.aspx">Home</a></li>
+<li><a href="#">Company</a>
+ <ul>
+  <li><a href="#">About SpeedLan</a></li>
+  <li><a href="#">Why SpeedLan</a></li>
+  
+  </ul>
+</li>
+
+<li><a href="#">Products</a>
+  <ul>
+  <li><a href="#">Cyberoam</a></li>
+  <li><a href="#">Microsoft</a>
+  <ul>
+  <li><a href="#">Exchange Server</a></li>
+  <li><a href="#">Windows Server</a></li>
+  <li><a href="#">Sharepoint Server</a></li>
+  </ul>
+  </li>
+  <li><a href="#">VmWare</a></li>
+  
+  </ul>
+</li>
+<li><a href="#">Services</a>
+<ul>
+<li><a href="#">Software Development</a></li>
+ <li><a href="#">Training</a></li>
+</ul>
+</li>
+<li><a href="#">Solutions</a>
+<ul>
+<li><a href="#">Internet Service Managent</a></li>
+ <li><a href="#">Web Solutions</a></li>
+</ul>
+</li>
+
+<li><a href="http://www.dynamicdrive.com/style/">Careers</a></li>
+</ul>
+<br style="clear: left" />
+</div>
+
+
+<div class="ourpage2">
+        <table align="right" class="style1">
+            <tr>
+                <td>
+                    House 26 23 Road<br />
+                    Festac Town, Lagos State<br />
+                    +2347039024959,<br />
+                    info@speedlancommunications.com</td>
+            </tr>
+        </table>
+        </div>
+    <div class="ourpage1">
+        <asp:Image ID="Image1" runat="server" ImageAlign="Right" 
+            ImageUrl="~/Image/SPEEDLAN.png" Width="296px" Height="82px" />
+        </div>

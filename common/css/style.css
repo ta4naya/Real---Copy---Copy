@@ -1,0 +1,65 @@
+
+
+.mainContainer
+{
+    margin: 15px auto 0 auto;
+    width: 960px;
+}
+
+.topNav
+{
+	font-family: 'PT Sans', sans-serif;
+	font-weight:bold;
+	font-size:12px;
+	width:950px;
+	margin:0 auto;
+	letter-spacing:-1px\9;
+}
+
+.tabs li
+{
+	display:inline;
+}
+
+.tabs li a
+{
+    margin: 15px auto auto auto;
+    line-height: 2.5em;
+    padding: 12px 13px 11px 12px;
+    cursor: inherit;
+    border: 1px solid #cccccc;
+    font-family: 'PT Sans' ,sans-serif;
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: 400;
+    background-color: #666666;
+}
+
+
+
+.tabs .tab-current
+{
+   padding: 37px 13px 12px 12px;
+    border-bottom: 0px;
+     color: #FFFFFF;
+     background-color: #666666;
+}
+
+.tabsContent
+{
+    border: 1px solid #cccccc;
+    -moz-box-shadow: 3px 3px 5px #cccccc;
+    -webkit-box-shadow: 3px 3px 5px #cccccc;
+    background: #ffffff;
+    padding: 20px 0px 20px 0px;
+    color: #666666;
+    width: 920px;
+}
+
+ul.tabs
+{
+	margin: 0 0 11px 20px;
+}
+
+
+

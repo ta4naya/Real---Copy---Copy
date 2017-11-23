@@ -1,0 +1,372 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Site.Master.vb" Inherits="Site"   %>
+<%@ Register TagPrefix="obshow" Namespace="OboutInc.Show" Assembly="obout_Show_Net" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<!-- liteAccordion is Homepage Only -->
+<link rel="stylesheet" href="layout/scripts/liteaccordion-v2.2/css/liteaccordion.css" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="Styles/jqueryslidemenu.css" />
+
+<!--[if lte IE 7]>
+<style type="text/css">
+    html .jqueryslidemenu{height: 1%;
+        width: 521px;
+    } /*Holly Hack for IE7 and below*/
+</style>
+<![endif]-->
+
+<script type="text/javascript">
+    function MouseOver() {
+        imagestuff = document.getElementById("first");
+        imagestuff.setAttribute("src", "image/gallery2.png");
+    }
+
+    function MouseOut() {
+        imagestuff = document.getElementById("first");
+        imagestuff.setAttribute("src", "image/gallery.png");
+    }
+
+    function MouseOver1() {
+        imagestuff = document.getElementById("first1");
+        imagestuff.setAttribute("src", "image/gallery2.png");
+    }
+
+    function MouseOut1() {
+        imagestuff = document.getElementById("first1");
+        imagestuff.setAttribute("src", "image/gallery.png");
+    }
+
+</script>
+ <script type="text/javascript" src="common/javascript/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="common/javascript/script.js"></script>
+<link href="common/css/style.css"	rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="Scripts/jquery.min.js"></script>
+<script type="text/javascript" src="Scripts/jqueryslidemenu.js"></script>
+ <link rel="stylesheet" href="Styles/tab.css" type="text/css"  />
+<script type="text/javascript" src="Scripts/jquery-1.9.1.js"></script>
+<script  type="text/javascript" src="Scripts/jquery-ui.js"></script>
+<script type="text/javascript" >
+
+
+    $(document).ready(function () {
+        $("#Clickme").click(function () {
+            $("#Frame").css({ "display": "block" });
+            $("#Clickme").hide();
+            $("#Clickme1").show();
+
+
+        });
+
+        $("#Clickme1").click(function () {
+            $("#Frame").css({ "display": "none" });
+            $("#Clickme1").hide();
+            $("#Clickme").show();
+
+
+        });
+
+       
+
+        $(".p1").hover(function () {
+            $(".p2").css({ "display": "block" });
+            $(".p8").hide();
+            $(".p10").hide();
+            $(".p12").hide();
+            $(".p14").hide();
+        });
+
+        $(".p2").mouseleave(function () {
+            $(".p2").hide();
+        });
+
+        
+
+        $(".p7").hover(function () {
+            $(".p8").css({ "display": "block" });
+            $(".p12").hide();
+            $(".p14").hide();
+            $(".p10").hide();
+            $(".p2").hide();
+        });
+
+        $(".p8").mouseleave(function () {
+            $(".p8").hide();
+        });
+
+
+        $(".p9").hover(function () {
+            $(".p10").css({ "display": "block" });
+            $(".p12").hide();
+            $(".p14").hide();
+            $(".p8").hide();
+            $(".p2").hide();
+
+        });
+
+        $(".p10").mouseleave(function () {
+            $(".p10").hide();
+        });
+
+        $(".p11").hover(function () {
+            $(".p12").css({ "display": "block" });
+            $(".p8").hide();
+            $(".p14").hide();
+            $(".p10").hide();
+            $(".p2").hide();
+        });
+
+        $(".p12").mouseleave(function () {
+            $(".p12").hide();
+        });
+
+        $(".p13").hover(function () {
+            $(".p14").css({ "display": "block" });
+            $(".p12").hide();
+            $(".p8").hide();
+            $(".p10").hide();
+            $(".p2").hide();
+        });
+
+        $(".p14").mouseleave(function () {
+            $(".p14").hide();
+        });
+    });
+</script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+       .shiftleft
+       {
+           float:left;
+           width:200px;
+       }
+        </style>
+</head>
+<body>
+    <form runat="server">
+    
+    <div class="hideSkiplink">
+    <div class="shiftleft">
+        <asp:Image ID="Image3" runat="server" ImageUrl="~/Image/REALCONCEPTS.png" 
+            Width="364px" />
+        </div>
+    <asp:Menu ID="Menu5" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="PORTFOLIO">
+                            <asp:MenuItem Text=".......Featured  Wedding......" 
+                                Value=".......Featured  Wedding......">
+                                <asp:MenuItem Text="Idowu and Toyin" Value="Idowu and Toyin" 
+                                    NavigateUrl="~/Idowu.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Couple A and B" Value="Couple A and B"></asp:MenuItem>
+                                <asp:MenuItem Text="Coupke C and D" Value="Coupke C and D"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="......................Birthdays................" 
+                                Value="......................Birthdays................">
+                                <asp:MenuItem Text="Demilades Birthday" Value="Demilades Birthday" 
+                                    NavigateUrl="~/demilade.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Farida's Birthday" Value="Farida's Birthday" 
+                                    NavigateUrl="~/Fadira.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Feranmi's Birthday" Value="Feranmi's Birthday" 
+                                    NavigateUrl="~/feranmi.aspx">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="...............Ceremonies.............." 
+                                Value="...............Ceremonies..............">
+                                <asp:MenuItem Text="Naming Ceremony" Value="Naming Ceremony"></asp:MenuItem>
+                                <asp:MenuItem Text="Award Ceremony" Value="Award Ceremony"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Blog.aspx" Text="BLOG"/>
+                        <asp:MenuItem Text="CONTACT" Value="CONTACT" NavigateUrl="~/ContactUs.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="PRICING" Value="PRICING" NavigateUrl="~/Products.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="CLIENTS" Value="CLIENTS"></asp:MenuItem>
+                        <asp:MenuItem Text="ACCOLADES" Value="ACCOLADES"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Products.aspx" Text="ABOUT US" Value="ABOUT US">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+    </div>
+    <div class="ourpage">
+    <table width ="100%">
+    <tr>
+    <td >
+          
+           <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/realheart.jpg" 
+               Height="89px" Width="417px" />
+           &nbsp;</td>
+    <td></td>
+    <td align="right"><br />
+        <asp:Image ID="Image2" runat="server" ImageUrl="~/Image/YEXTIMAGE.jpg" />
+        </td>
+    </tr>
+    </table>
+    </div>
+   
+            
+            
+            
+
+    <div class="page">
+
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+
+   <div class="foot1">
+       
+               <asp:Label ID="Label1" runat="server" Font-Names="AR JULIAN" 
+                   Font-Size="X-Large" ForeColor="White" Text="REAL HEART KONCEPTS"></asp:Label>
+              &nbsp;<br />
+               <br />
+               <asp:Label ID="Label6" runat="server" Text="Real Heart Concepts specializes in Photography, Video Coverages 
+               for your Events we are sensitive to details in Life, storytellers that strive to tell your visual tale in a unique, creative, honest, elegant, stylish and authentic voice. We strive to move you.
+
+To conjure a reminder of how you could not wait to see how that ring looked on her finger.
+
+To jog your memory about how you cried when he said, I do and the smile on his face when you said the same.
+
+To help you recollect the anticipation that resided in your eyes and the life that resided in your belly as you awaited the newest addition to your family..." Font-Names="Arabic Typesetting" Font-Size="Large" ForeColor="White"
+               ></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              
+           
+               <br />
+              
+           
+       </div>
+
+   <div class="foot2">
+    <center> <asp:Label ID="Label5" runat="server" Font-Names="AR JULIAN" 
+                   Font-Size="Large" ForeColor="White" Text="LINKS"></asp:Label></center>
+              <br />
+       <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu1" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Birthdays.aspx" Text="Birthdays"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Weddings"/>
+                        <asp:MenuItem Text="Graduations" Value="Graduations"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+      
+      <asp:Menu ID="Menu1" runat="server" CssClass="menu1" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Naming Ceremonies"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Photography"/>
+                       
+                    </Items>
+                </asp:Menu>
+     <asp:Menu ID="Menu2" runat="server" CssClass="menu1" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Portfolios"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Accolades"/>
+                    </Items>
+                </asp:Menu>
+                <asp:Menu ID="Menu3" runat="server" CssClass="menu1" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Events"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Potraits"/>
+                    </Items>
+                </asp:Menu>
+       <br />
+      
+     
+       </div>
+   <div class="foot3">
+       <asp:Label ID="Label2" runat="server" Font-Names="AR JULIAN" Font-Size="Large" 
+           ForeColor="White" Text="SUBSCRIBE FOR NEWSLETTER"></asp:Label>
+       
+      
+     
+       <br />
+       
+      
+     
+       <br />
+       <asp:Label ID="Label3" runat="server" Font-Names="AR JULIAN" Font-Size="Large" 
+           ForeColor="White" Text="Full Name"></asp:Label>
+       
+      
+     
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <br />
+       <asp:TextBox ID="TextBox1" runat="server" Width="260px" BorderColor="Black"></asp:TextBox>
+       <br />
+       <br />
+
+       &nbsp;
+
+       <asp:Label ID="Label4" runat="server" Font-Names="AR JULIAN" Font-Size="Large" 
+           ForeColor="White" Text="Email Address"></asp:Label>
+       
+      
+     
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <br />
+       <asp:TextBox ID="TextBox2" runat="server" Width="260px" BorderColor="Black"></asp:TextBox>
+       <br />
+       <br />
+
+      
+     
+       <asp:Button ID="Button1" runat="server" BackColor="#CC3300" 
+           Font-Names="Arial Black" ForeColor="White" Height="39px" 
+           Text="Join Our Mailing List" Width="199px" />
+       <br />
+       <br />
+       <br />
+       <br />
+
+      
+     
+       </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+   </div>
+   
+  <script type="text/javascript" src="layout/scripts/liteaccordion-v2.2/js/liteaccordion.jquery.min.js"></script> 
+<script type="text/javascript">
+$("#featured_slide").liteAccordion({
+    theme: "os-tpl",
+    containerWidth: 960, // fixed (px)
+    containerHeight: 360, // fixed (px) - overall height of the slider
+    headerWidth: 48, // fixed (px) - slide spine title
+    firstSlide: 1, // displays slide (n) on page load
+	activateOn: "click", // click or mouseover
+    autoPlay: false, // automatically cycle through slides
+    pauseOnHover: true, // pause slides on hover
+    rounded: false, // square or rounded corners
+    enumerateSlides: true, // put numbers on slides
+    slideSpeed: 800, // slide animation speed
+    cycleSpeed: 6000, // time between slide cycles
+});
+</script>
+    
+    </form>
+</body>
+</html>
